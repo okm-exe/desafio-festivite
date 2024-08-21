@@ -1,0 +1,36 @@
+:root {
+    --brand-light: #59B2FF;
+    --brand-mid: #3487CF;
+    --brand-dark: #1D6FB6;
+    --a-purple: #B259FF;
+    --a-fuschia: #FF59F9;
+    --a-pink: #FF598B;
+    --a-red: red;
+    --a-orange: #FF8B59;
+    --a-yellow: #FFCD59;
+    --a-lime: #E1FF59;
+    --a-green: #59FF91;
+    --a-cyan: #59FFF9;
+    --a-navy: #6A59FF;
+    --feedback: #6A59FF;
+    --input-base: #1C1F21;
+    --input-stroke: #363B40;
+    --input-ph: #869198;
+    --shape-background: #131516;
+    --shape-body: #212427;
+    --shape-button: #2D3136;
+    --shape-hover: #383D42;
+    --text-body: #C8CDD0;
+    --text-head: #F9F9F9;
+}
+body {
+    background-color: var(--shape-hover);
+    color: var(--text-body);
+    font-family: Open Sans;
+}
+legend {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text-head);
+}

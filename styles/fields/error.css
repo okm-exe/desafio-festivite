@@ -1,0 +1,26 @@
+.error {
+    display: none;
+    margin-top: 2px;
+    align-items: center;
+}
+.error img {
+    height: 16px;
+    transform: translateY(20%);
+    filter: brightness(0) saturate(100%) invert(22%) sepia(77%) saturate(7007%) hue-rotate(356deg) brightness(102%) contrast(120%);
+}
+.error span {
+    color: red;
+    font-size: 12px;
+}
+#name:not(:focus):invalid {
+    border: 1px solid red;
+}
+#name:not(:focus):invalid ~ .error {
+    display: block;
+}
+textarea:not(:focus):invalid {
+    border: 1px solid red;
+}
+textarea:not(:focus):invalid ~ .error {
+    display: block;
+}

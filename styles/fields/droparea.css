@@ -1,0 +1,34 @@
+.fotoCapaWrapper input[type=file] {
+    display: block;
+    color: var(--input-ph);
+    flex: 1;
+}
+input[type=file]::file-selector-button {
+    display: none;
+}
+.uploadBTN {
+display: flex;
+align-items: center;
+gap: 8px;
+}
+.uploadBTN button {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
+    padding: 14px;
+    background-color: var(--shape-button);
+    border-radius: 10px;
+    border: none;
+    color: var(--text-head);
+    & img {
+        height: 13px;
+                filter: invert(0.5) sepia(1) saturate(5) hue-rotate(175deg);
+
+    }
+}
+.uploadBTN button:hover {
+    background-color: var(--shape-hover);
+    transition: background-color 1s;
+
+}

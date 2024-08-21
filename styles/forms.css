@@ -1,0 +1,59 @@
+@import url(fields/index.css);
+
+main {
+    border: 10px solid var(--shape-background);
+    border-radius: 0 15px 15px 15px;
+    background-color: var(--shape-background);
+}
+.main-container {
+    background-color: var(--shape-body);
+    border-radius: 10px;
+    padding: 80px;
+}
+.main-container > form > h2 {
+    margin-bottom: 40px;
+    margin-top: 0px;
+    color: var(--text-head);
+}
+.main-container fieldset {
+    border: none;
+}
+fieldset {
+    display: grid;
+    gap: 15px;
+    padding: 0px;
+}
+fieldset legend{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    margin-top: 48px;
+    align-items: center;
+}
+fieldset legend img {
+    height: 24px;
+}
+.estiloFlex {
+    display: flex;
+    margin-bottom: 48px;
+}
+.estiloFlex1 {
+    display: 1;
+    width: 100%;
+}
+.fotoCapaWrapper {
+    flex: 1;
+    width: 100%;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--input-stroke);
+    margin: 1em 0;
+    padding: 0;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    width: 100%;
+}
+

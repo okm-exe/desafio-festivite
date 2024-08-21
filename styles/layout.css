@@ -1,0 +1,55 @@
+#app {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+aside {
+    border-radius: 15px 0px 0px 15px;
+    border: 10px solid var(--shape-background);
+    background-color: var(--shape-background);
+    height: 740px;
+    margin-right: -10px;
+}
+.aside-container {
+    padding: 20px;
+    height: 700px;
+    max-width: 400px;
+    border-radius: 10px;
+    background-image: url("../assets/Background.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+main {
+    max-width: 820px;
+}
+.side img {
+    width: 45px;
+    height: 48px;
+}
+.side h1 {
+    font-family: "Leckerli One", cursive; 
+    font-size: 40px;
+    color: var(--a-pink);
+    font-weight: 400;
+}
+.side p {
+    color: var(--text-head);
+}
+a {
+    color: var(--brand-mid);
+    text-decoration-style: dotted;
+}
+a:hover{
+    color: var(--brand-light);
+    transition: color 1s;
+
+}
+.terms-wrapper {
+    gap: 8px;
+    display: grid;
+    margin-bottom: 48px
+}

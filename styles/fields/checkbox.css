@@ -1,0 +1,41 @@
+.checkbox-wrapper input[type="checkbox"] {
+    appearance: none;
+    font-size: 1px;
+    padding: 1px;
+    border: 1px solid var(--shape-button);
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
+    cursor: pointer;
+}
+.checkbox-wrapper input[type="checkbox"]:hover {
+    
+    border: 1px solid var(--shape-hover);
+}
+.checkbox-wrapper input[type="checkbox"]:hover::before {
+    outline: 1px solid var(--brand-light);
+    transition: outline 1s;
+
+}
+.checkbox-wrapper input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url(../../assets/icons/check.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(0);
+    outline: 1px solid var(--brand-mid);
+    border-radius: 5px;
+}
+.checkbox-wrapper input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+.terms-div {
+    display: flex;
+    vertical-align: middle;
+    gap: 8px;
+}

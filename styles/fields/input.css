@@ -1,0 +1,102 @@
+.event-info input, textarea,
+.contactInfo input {
+    appearance: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid var(--input-stroke);
+    padding: 0px 14px;
+    background-color: var(--input-base);
+    box-sizing: border-box;
+     -webkit-box-sizing:border-box;
+     -moz-box-sizing: border-box;
+    font-family: Open Sans;
+    color: var(--text-head);
+}
+.event-info input,
+.contactInfo input {
+    height: 48px;
+}
+.event-info textarea {
+    height: 144px;
+    padding: 14px;
+    color: var(--text-head);
+    resize: none;
+}
+.event-info textarea::placeholder {
+    color: var(--input-ph);
+}
+label {
+    color: var(--input-ph);
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+.event-info input:focus, textarea:focus, .contactInfo input:focus{
+    outline: 1px solid var(--brand-mid);
+} 
+input::placeholder,
+input[type="datetime-local"],
+textarea{
+    color: var(--input-ph);
+    font-family: Open Sans;
+}
+.customize {
+    margin-top: 48px;
+}
+input[type="datetime-local"] {
+    color: var(--input-ph);
+    position: relative;
+
+    &::-webkit-calendar-picker-indicator {
+        opacity: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../../assets/icons/calendar.svg) center/contain;
+        right: 14px;
+        height: 16px;
+        width: 16px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+.local-flex1 input::placeholder{
+    color: var(--input-ph);
+    font-family: Open Sans;
+}
+
+.presON {
+    display: flex;
+    gap: 8px;
+}
+.radio-flex1 {
+    flex: 1;
+}
+.local-flex1 {
+    flex: 1;
+}
+.dateSE {
+    display: flex;
+    gap: 8px;
+}
+.date-flex1 {
+    flex: 1;
+}
+.date-flex2 {
+    flex: 1;
+}
+#end, #start {
+    width: 100%;
+}
+.namePhone-flex {
+    display: flex;
+    gap: 8px;
+}
+.phone-flex {
+    flex: 1;
+}
+.mail-flex {
+    flex: 1;
+}
